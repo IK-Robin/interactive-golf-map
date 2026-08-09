@@ -1,0 +1,99 @@
+.compass{position:absolute;left:22px;bottom:82px;width:45px;height:45px;border-radius:50%;background:#f8f2e8e8;color:var(--ink);z-index:6;display:grid;place-items:center;box-shadow:0 7px 22px #0003}.compass:before,.compass:after{content:"";position:absolute;background:#17332622}.compass:before{width:1px;height:33px}.compass:after{height:1px;width:33px}.compass b{position:absolute;top:3px;font-size:8px}.compass i{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:13px solid #c88e2b;transform:translateY(-4px)}
+.hole-badge{pointer-events:auto;cursor:pointer}.hole-badge circle{fill:#123c2b;stroke:#f4ddb0;stroke-width:2;filter:drop-shadow(0 5px 5px #0005);transition:fill .2s,stroke .2s}.hole-badge:hover circle,.hole-badge.active circle{fill:#d2a341;stroke:#fff}.hole-badge text{fill:#fff;font:700 17px Arial;text-anchor:middle;dominant-baseline:central;pointer-events:none}.green-flag{pointer-events:none;filter:drop-shadow(0 4px 3px #0004)}.golf-ball{pointer-events:none;filter:drop-shadow(0 7px 5px #0008);opacity:0}.golf-ball.active{opacity:1}.ball-shadow{pointer-events:none;fill:#10291f;opacity:0}.ball-shadow.active{opacity:.3}.target-pulse{fill:none;stroke:#fff;stroke-width:4;opacity:0;pointer-events:none;vector-effect:non-scaling-stroke}.target-pulse.active{animation:pulse 1s ease-out 2}@keyframes pulse{0%{opacity:1;stroke-width:3}100%{opacity:0;stroke-width:20}}.shot-path.play{opacity:1;stroke-dasharray:10 10;animation:routeDash .65s linear infinite;filter:drop-shadow(0 2px 4px #0006)}@keyframes routeDash{to{stroke-dashoffset:-20}}.map-shell.cinematic .controls,.map-shell.cinematic .hole-nav,.map-shell.cinematic .legend,.map-shell.cinematic .compass{opacity:.35;transition:opacity .3s}.flyover span{display:inline-grid;place-items:center;width:22px;height:22px;background:#173326;color:#fff;border-radius:50%;margin-right:5px}
+.app{max-width:none;height:100vh;padding:0}.map-shell{width:100%;height:100vh;min-height:0;overflow:hidden;border-radius:0;border:0}.map-stage{border-radius:0;background:#b5d095}.hole-nav{top:auto;bottom:18px;width:max-content;max-width:calc(100% - 140px);overflow-x:auto;scrollbar-width:none;box-shadow:0 12px 35px #0005}.hole-nav::-webkit-scrollbar{display:none}.hole-nav button{flex:0 0 46px}
+.hole-hit{pointer-events:bounding-box;stroke-width:1px}.detail-card.anchor-card{right:auto;bottom:auto;width:min(235px,calc(100% - 20px));padding:14px;transform:translateY(8px) scale(.97);transform-origin:bottom center;opacity:0;pointer-events:none}.detail-card.anchor-card.open{transform:none;opacity:1;pointer-events:auto}.detail-card.anchor-card:after{display:none}
+.hole-hit.active{stroke:transparent;stroke-width:0;filter:none}.hole-hit:hover,.hole-hit.active:hover{stroke:#fff;stroke-width:1px;filter:none}
+.detail-card.anchor-card.below{transform-origin:top center}.detail-card .card-number{font-size:32px}.detail-card h2{font-size:18px;margin:5px 0 10px}.detail-card .stats{gap:5px}.detail-card .stats div{padding:7px}.detail-card .stats strong{font-size:17px}.detail-card .flyover{margin-top:10px;padding:9px;font-size:10px}.detail-card .close{width:26px;height:26px;font-size:18px}
+.map-shell.cinematic .hole-hit.active{fill:transparent;stroke:transparent;filter:none}
+.map-shell.auto-moving .hole-hit,.map-shell.auto-moving .hole-badge,.map-shell.auto-moving .facility-hit,.map-shell.cinematic .hole-hit,.map-shell.cinematic .hole-badge,.map-shell.cinematic .facility-hit{pointer-events:none}.map-shell.auto-moving .tooltip,.map-shell.cinematic .tooltip{display:none}
+.map-shell:fullscreen{width:100vw;height:100vh;min-height:0;border-radius:0}.map-shell:fullscreen .map-stage{border-radius:0}.map-shell:fullscreen .hole-nav{top:auto;bottom:18px;max-width:calc(100% - 150px);z-index:25}.map-shell:-webkit-full-screen{width:100vw;height:100vh;min-height:0;border-radius:0}.map-shell:-webkit-full-screen .map-stage{border-radius:0}.map-shell:-webkit-full-screen .hole-nav{top:auto;bottom:18px;max-width:calc(100% - 150px);z-index:25}
+@media(max-width:700px){.hole-nav{max-width:calc(100% - 12px);justify-content:flex-start}.detail-card.anchor-card{top:auto;bottom:auto;left:auto;right:auto;width:min(220px,calc(100% - 20px))}}
+.hole-nav{display:grid;grid-template-columns:repeat(18,minmax(34px,1fr));gap:4px;width:min(980px,calc(100% - 150px));max-width:none;overflow:visible}
+.hole-nav button{min-width:0;width:100%;height:44px;line-height:1;padding:0 2px}.hole-nav button b,.hole-nav button small{display:block}.hole-nav button small{font-size:7px;margin-top:4px;opacity:.72;white-space:nowrap}
+.ball-distance{pointer-events:none;opacity:0;filter:drop-shadow(0 5px 7px #000a)}.ball-distance.active{opacity:1}.ball-distance rect{fill:#102a20;stroke:#f3d78e;stroke-width:2;vector-effect:non-scaling-stroke}.ball-distance text{fill:#fff;font:900 14px Arial,sans-serif;text-anchor:middle;dominant-baseline:central;letter-spacing:.2px}
+.ball-distance.complete rect{fill:#173f2e;stroke:#ffd978}
+.map-tools{position:absolute;left:14px;top:14px;z-index:8;display:flex;gap:5px;padding:5px;border-radius:14px;background:var(--glass);backdrop-filter:blur(12px)}.map-tools button{border:0;border-radius:10px;padding:9px 11px;background:#ffffff10;color:#fff;font-size:11px;font-weight:800;cursor:pointer}.map-tools button.active,.map-tools button:hover{background:var(--gold);color:var(--ink)}
+.tee-picker{display:flex;gap:5px;margin-top:9px}.tee-picker button{flex:1;border:1px solid #ffffff18;border-radius:8px;background:#ffffff08;color:#fff;padding:6px 3px;font-size:9px;cursor:pointer}.tee-picker button.active{border-color:var(--gold);background:#ffffff18}.tee-picker i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:3px;background:#fff}.tee-picker [data-tee=black] i{background:#111}.tee-picker [data-tee=red] i{background:#d65348}.hole-note{font-size:10px;line-height:1.35;color:#c9d8d0;margin-top:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.facility-hit,.course-marker{opacity:0;pointer-events:none}.show-facilities .facility-hit,.show-facilities .course-marker{opacity:1;pointer-events:auto}.course-marker{cursor:pointer}.course-marker circle{fill:#123c2b;stroke:#fff;stroke-width:1.5;vector-effect:non-scaling-stroke}.course-marker text{fill:#fff;font:700 8px Arial;text-anchor:middle;pointer-events:none}.course-marker.layup circle{fill:#d2a341}.hide-holes .hole-hit,.hide-holes .hole-badge,.hide-holes .shot-path{opacity:0;pointer-events:none}
+@media(max-width:700px){.hole-nav{display:flex;width:calc(100% - 12px);max-width:calc(100% - 12px);gap:3px;overflow-x:auto;justify-content:flex-start}.hole-nav button{flex:0 0 48px;width:48px}.detail-card.anchor-card{position:absolute!important;left:10px!important;right:10px!important;top:auto!important;bottom:72px!important;width:auto;max-height:42vh;overflow:auto;border-radius:18px;transform:translateY(20px);transform-origin:bottom center}.detail-card.anchor-card.open{transform:none}.map-tools{top:10px;left:10px}.map-tools button{padding:8px;font-size:10px}.controls{top:56px!important}}
+@media(max-width:992px){
+  html,body,.app,.map-shell{width:100%;height:100%;height:100dvh;min-height:0;overflow:hidden}
+  .map-stage,.map-content,.svg-layer{width:100%;height:100%}
+  .svg-layer svg{width:100%!important;height:100%!important;max-width:100%;max-height:100%;display:block}
+  .controls{right:10px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;grid-template-columns:none;gap:7px;padding:0;background:transparent;backdrop-filter:none;box-shadow:none}
+  .controls button{width:42px;height:42px;border:1px solid #ffffff45;background:#102a20cc;box-shadow:0 4px 12px #0003}
+}
+
+/* Phone presentation: keep a real 600px-tall interactive viewport. */
+@media(max-width:600px){
+  body{padding-top:0}
+  .app{padding:0 8px 82px}
+  .map-shell{
+    width:100%;
+    max-width:600px;
+    height:600px;
+    min-height:600px;
+    aspect-ratio:auto;
+    border-radius:14px;
+  }
+  .map-stage,.map-content,.svg-layer{
+    width:100%;
+    height:600px;
+    min-height:600px;
+  }
+  .svg-layer svg{
+    width:100%!important;
+    height:100%!important;
+    min-height:600px;
+    overflow:visible;
+  }
+  .map-shell.cinematic .golf-ball{filter:drop-shadow(0 5px 4px #0009)}
+  .map-shell.cinematic .ball-distance{filter:drop-shadow(0 4px 6px #000c)}
+  .map-shell.cinematic .ball-distance rect{stroke-width:3}
+  .map-shell.cinematic .ball-distance text{font-size:18px}
+  .hole-nav-rail{bottom:-62px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* Single-SVG responsive presentation: the SVG owns its static background image. */
+@media(max-width:992px){
+  .map-stage{inset:0;background:#9fc481}
+  .map-content,.svg-layer{inset:0;width:100%;height:100%}
+  .svg-layer svg{position:absolute;inset:0;width:100%!important;height:100%!important;max-width:none;max-height:none;display:block}
+}
+
+/* Mobile map card: clip only the SVG viewport so tooltips/cards may escape. */
+.hole-nav-rail{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:8}
+.hole-nav-rail .hole-nav{position:static;left:auto;bottom:auto;transform:none}
+.hole-nav-arrow{display:none}
+
+@media(max-width:992px){
+  html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+  body{padding:12px 0 82px}
+  .app{width:100%;height:auto;min-height:0;padding:0 10px;overflow:visible}
+  .map-shell{width:100%;max-width:600px;height:auto;min-height:0;aspect-ratio:1400/850;margin:0 auto;overflow:visible;border-radius:16px;background:transparent;box-shadow:0 18px 55px #0007}
+  .map-stage{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;border-radius:16px;background:#9fc481}
+  .map-content,.svg-layer{inset:0;width:100%;height:100%}
+  .svg-layer svg{width:100%!important;height:100%!important;object-fit:contain}
+  .tooltip{position:fixed;z-index:1000;max-width:min(220px,calc(100vw - 20px))}
+  .detail-card.anchor-card{z-index:30;max-height:none;overflow:visible}
+  .hole-nav-rail{left:0;right:0;bottom:-62px;transform:none;display:grid;grid-template-columns:42px minmax(0,1fr) 42px;align-items:center;gap:6px;width:100%;padding:7px;background:var(--glass);border-radius:15px;box-shadow:0 10px 28px #0005;backdrop-filter:blur(12px)}
+  .hole-nav-rail .hole-nav{display:flex;width:100%;max-width:none;padding:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;overflow-x:auto;scroll-behavior:smooth;scroll-snap-type:x proximity}
+  .hole-nav-rail .hole-nav button{flex:0 0 48px;width:48px;height:42px;scroll-snap-align:center}
+  .hole-nav-arrow{display:grid;place-items:center;width:42px;height:42px;padding:0;border:1px solid #ffffff32;border-radius:11px;background:#ffffff12;color:#fff;font:800 27px/1 Arial;cursor:pointer}
+  .hole-nav-arrow:active{background:var(--gold);color:var(--ink)}
+  .controls{right:8px;top:50%!important}
+  .controls button{width:38px;height:38px}
+  .map-tools{max-width:calc(100% - 58px)}
+}
+
+@media(max-width:700px){
+  .detail-card.anchor-card{bottom:auto!important;width:min(220px,calc(100% - 20px))}
+  /* The layer switcher covered a large part of the shallow mobile map. The
+     hole navigator below the map remains available for selecting holes. */
+  .map-tools{display:none}
+  /* Keep cinematic elements crisp and readable over detailed artwork. */
+  .map-shell.cinematic .shot-path.play{stroke-width:5}
+  .map-shell.cinematic .ball-distance rect{stroke-width:2.5}
+  .map-shell.cinematic .ball-distance text{font-size:16px}
+}
