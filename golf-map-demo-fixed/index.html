@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10291f">
+  <title>Green Valley — Interactive Course Guide</title>
+  <link rel="stylesheet" href="assets/style.css?v=20260723-1">
+  <link rel="stylesheet" href="assets/premium.css?v=20260723-1">
+</head>
+<body>
+  <main class="app">
+    <section class="map-shell" id="mapShell">
+      <div class="map-stage" id="mapStage" aria-label="Interactive eighteen-hole golf course map">
+        <div class="map-content" id="mapContent">
+          <div id="courseMap" class="svg-layer overlay"></div>
+        </div>
+      </div>
+
+      <div class="hole-nav-rail" aria-label="Hole navigation controls">
+        <button class="hole-nav-arrow hole-nav-prev" id="holeNavPrev" type="button" aria-label="Previous hole">‹</button>
+        <nav class="hole-nav" id="holeNav" aria-label="Select a hole"></nav>
+        <button class="hole-nav-arrow hole-nav-next" id="holeNavNext" type="button" aria-label="Next hole">›</button>
+      </div>
+
+      <div class="map-tools" aria-label="Course map options">
+        <button id="holeLayerBtn" class="active" type="button">Holes</button>
+        <button id="facilityLayerBtn" type="button">Facilities</button>
+        <button id="shareBtn" type="button" title="Copy selected-hole link">Share</button>
+      </div>
+
+      <div class="controls" aria-label="Map controls">
+        <button id="zoomIn" title="Zoom in" aria-label="Zoom in">+</button>
+        <button id="zoomOut" title="Zoom out" aria-label="Zoom out">−</button>
+        <button id="reset" title="Reset view" aria-label="Reset view">⌂</button>
+        <button id="fullscreen" title="Fullscreen" aria-label="Fullscreen">⛶</button>
+      </div>
+
+      <div class="tooltip" id="tooltip" role="status"></div>
+
+      <aside class="detail-card" id="detailCard" aria-live="polite">
+        <button class="close" id="closeCard" aria-label="Close details">×</button>
+        <div class="card-number" id="cardNumber">01</div>
+        <h2 id="cardTitle">The Valley Opener</h2>
+        <div class="stats"><div><small>Par</small><strong id="cardPar">4</strong></div><div><small>Yards</small><strong id="cardYards">384</strong></div><div><small>Index</small><strong id="cardIndex">5</strong></div></div>
+        <div class="tee-picker" id="teePicker" aria-label="Choose tee"><button data-tee="black" type="button"><i></i>Black</button><button class="active" data-tee="white" type="button"><i></i>White</button><button data-tee="red" type="button"><i></i>Red</button></div>
+        <div class="hole-note" id="cardText"></div>
+        <button class="flyover" id="flyoverBtn"><span>▶</span> Start cinematic hole guide</button>
+      </aside>
+    </section>
+  </main>
+  <script src="assets/config.js?v=20260723-1"></script>
+  <script src="assets/app.js?v=20260723-1"></script>
+</body>
+</html>

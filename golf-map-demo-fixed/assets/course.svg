@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 850" preserveAspectRatio="xMidYMid slice">
+ <defs>
+  <linearGradient id="grass" x2="1" y2="1"><stop stop-color="#b9d69b"/><stop offset="1" stop-color="#91bd7d"/></linearGradient>
+  <pattern id="mow" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(24)"><rect width="17" height="34" fill="#fff" opacity=".035"/></pattern>
+  <filter id="shadow"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-opacity=".24"/></filter>
+ </defs>
+ <rect width="1400" height="850" fill="url(#grass)"/><rect width="1400" height="850" fill="url(#mow)"/>
+ <path d="M0 665Q190 610 342 690T700 680T1050 704T1400 635V850H0Z" fill="#6a9b67" opacity=".55"/>
+ <path d="M-20 405Q170 330 307 408T604 406T900 350T1187 410T1420 352" fill="none" stroke="#72a86d" stroke-width="74" opacity=".48"/>
+ <!-- lake --> <path d="M536 384c67-51 170-47 215 17 35 49-3 106-80 117-83 12-177-11-185-62-4-27 15-50 50-72Z" fill="#5ba5aa" stroke="#d6e5c4" stroke-width="8"/><path d="M520 424q112 54 219 4" fill="none" stroke="#fff" opacity=".22" stroke-width="5"/>
+ <!-- cart path --> <path d="M142 720C74 584 176 489 300 466S462 274 611 249 842 352 1008 309 1241 188 1337 118" fill="none" stroke="#e6d6b3" stroke-width="16" opacity=".9"/><path d="M142 720C74 584 176 489 300 466S462 274 611 249 842 352 1008 309 1241 188 1337 118" fill="none" stroke="#c7b994" stroke-width="2" stroke-dasharray="5 12"/>
+ <!-- additional compact holes 7–18 -->
+ <g fill="none" stroke="#67aa5e" stroke-width="46" stroke-linecap="round" opacity=".96">
+  <path d="M377 704Q330 620 365 532"/><path d="M389 504Q432 425 403 337"/><path d="M408 307Q456 224 548 173"/>
+  <path d="M584 168Q679 118 763 166"/><path d="M801 173Q904 130 1002 170"/><path d="M1040 183Q1133 217 1175 301"/>
+  <path d="M1297 335Q1340 439 1290 538"/><path d="M1269 570Q1214 660 1108 687"/><path d="M1068 700Q970 758 874 709"/>
+  <path d="M834 706Q741 768 650 717"/><path d="M610 712Q520 763 444 711"/><path d="M328 690Q246 654 218 578"/>
+ </g>
+ <g fill="#3b8750"><circle cx="377" cy="704" r="15"/><circle cx="389" cy="504" r="15"/><circle cx="408" cy="307" r="15"/><circle cx="584" cy="168" r="15"/><circle cx="801" cy="173" r="15"/><circle cx="1040" cy="183" r="15"/><circle cx="1297" cy="335" r="15"/><circle cx="1269" cy="570" r="15"/><circle cx="1068" cy="700" r="15"/><circle cx="834" cy="706" r="15"/><circle cx="610" cy="712" r="15"/><circle cx="328" cy="690" r="15"/></g>
+ <g fill="#4f9854"><circle cx="365" cy="532" r="20"/><circle cx="403" cy="337" r="20"/><circle cx="548" cy="173" r="20"/><circle cx="763" cy="166" r="20"/><circle cx="1002" cy="170" r="20"/><circle cx="1175" cy="301" r="20"/><circle cx="1290" cy="538" r="20"/><circle cx="1108" cy="687" r="20"/><circle cx="874" cy="709" r="20"/><circle cx="650" cy="717" r="20"/><circle cx="444" cy="711" r="20"/><circle cx="218" cy="578" r="20"/></g>
+ <!-- hole 1 --> <path d="M135 677C158 610 187 530 263 468s132-82 188-105c31-13 56 24 33 46-67 65-149 86-195 142-50 60-60 113-74 156Z" fill="#62a85d"/><ellipse cx="183" cy="700" rx="39" ry="24" fill="#3b8750"/><ellipse cx="467" cy="381" rx="45" ry="31" fill="#4f9854"/><path d="M390 397q28-37 52 5-22 21-52-5" fill="#eadcae"/>
+ <!-- hole 2 --> <path d="M467 340c42-66 71-135 170-147 101-12 159 17 218 35l-29 67c-66-20-118-43-189-30-59 11-75 61-104 111Z" fill="#69ad60"/><ellipse cx="486" cy="361" rx="38" ry="25" fill="#3b8750"/><ellipse cx="850" cy="258" rx="47" ry="31" fill="#4f9854"/><path d="M734 256q38-25 54 12-32 23-54-12" fill="#eadcae"/>
+ <!-- hole 3 --> <path d="M906 258c56 20 107 29 165 2 69-32 106-97 175-132l39 67c-66 34-109 99-179 134-77 38-139 22-219-2Z" fill="#5fa65a"/><ellipse cx="884" cy="285" rx="39" ry="25" fill="#3b8750"/><ellipse cx="1271" cy="153" rx="48" ry="32" fill="#4f9854"/><path d="M1127 245q40-34 61 1-27 29-61-1" fill="#eadcae"/>
+ <!-- hole 4 --> <path d="M1268 217c-4 76-7 162-62 226-50 59-102 78-168 100l-26-67c55-20 96-37 127-78 37-49 35-121 38-184Z" fill="#66aa5d"/><ellipse cx="1267" cy="187" rx="39" ry="25" fill="#3b8750"/><ellipse cx="1023" cy="507" rx="48" ry="32" fill="#4f9854"/><path d="M1112 427q43-9 43 28-36 13-43-28" fill="#eadcae"/>
+ <!-- hole 5 --> <path d="M978 527c-87 22-151 49-225 104-53 39-103 57-166 68l-15-73c53-10 91-24 136-60 73-57 150-94 247-113Z" fill="#5da559"/><ellipse cx="1006" cy="510" rx="39" ry="25" fill="#3b8750"/><ellipse cx="569" cy="666" rx="48" ry="31" fill="#4f9854"/><path d="M742 589q44-24 56 14-39 26-56-14" fill="#eadcae"/>
+ <!-- hole 6 --> <path d="M520 660c-76 7-154 4-231-24-58-21-87-67-123-112l54-49c34 39 58 76 104 89 68 20 126 16 198 11Z" fill="#69ad60"/><ellipse cx="555" cy="650" rx="39" ry="25" fill="#3b8750"/><ellipse cx="190" cy="494" rx="47" ry="31" fill="#4f9854"/><path d="M337 604q34-34 60-4-29 29-60 4" fill="#eadcae"/>
+ <!-- trees --> <g fill="#32734b" opacity=".92">
+  <circle cx="80" cy="160" r="30"/><circle cx="122" cy="132" r="24"/><circle cx="176" cy="173" r="35"/><circle cx="244" cy="112" r="27"/><circle cx="322" cy="154" r="36"/><circle cx="391" cy="105" r="25"/><circle cx="972" cy="121" r="32"/><circle cx="1032" cy="92" r="25"/><circle cx="1088" cy="136" r="36"/><circle cx="1332" cy="351" r="32"/><circle cx="1301" cy="416" r="25"/><circle cx="1345" cy="491" r="38"/><circle cx="1213" cy="659" r="34"/><circle cx="1280" cy="691" r="25"/><circle cx="1144" cy="728" r="38"/><circle cx="850" cy="757" r="31"/><circle cx="778" cy="786" r="24"/><circle cx="420" cy="775" r="38"/><circle cx="350" cy="737" r="26"/>
+ </g>
+ <!-- clubhouse --> <g filter="url(#shadow)"><path d="M104 290h184v110H104z" fill="#f2e9d4"/><path d="m82 292 114-83 114 83Z" fill="#394e3c"/><rect x="184" y="329" width="30" height="71" fill="#7e593e"/><rect x="126" y="323" width="34" height="28" fill="#8fbdc0"/><rect x="236" y="323" width="34" height="28" fill="#8fbdc0"/></g>
+ <g font-family="Arial" font-weight="700" fill="#163527"><text x="115" y="433" font-size="15">CLUBHOUSE</text><text x="1140" y="774" font-size="14">DRIVING RANGE</text></g>
+ <!-- range --> <path d="M1060 690q128-97 273-25v126h-276Z" fill="#79b46b" stroke="#dce9cb" stroke-width="5"/><g fill="#fff" opacity=".75"><circle cx="1120" cy="731" r="3"/><circle cx="1190" cy="706" r="3"/><circle cx="1256" cy="739" r="3"/></g>
+</svg>
